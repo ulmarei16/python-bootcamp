@@ -32,13 +32,14 @@ krok = 0
 #poruszanie się gracza
 while True:
     ruch = input("Jak chcesz się ruszyć (a = lewo, w = góra, d = prawo, s = dół)?  ")
+    ruch = ruch.lower()
     if ruch == "a":
         gracz_x = gracz_x - 1
         krokpo = abs(gracz_x - skarb_x) + abs(gracz_y - skarb_y)
         if krokpo > minkrok:
-            print("Zimno")
+            print(f"Zimno; skarb: x{skarb_x}, y{skarb_y}; Ty: x{gracz_x}, y{gracz_y}")
         if krokpo < minkrok:
-            print("Ciepło")
+            print(f"Ciepło; skarb: x{skarb_x}, y{skarb_y}; Ty: x{gracz_x}, y{gracz_y}")
         if minkrok == 0:
             print("Wygrana")
             break
@@ -46,9 +47,9 @@ while True:
         gracz_x = gracz_x + 1
         krokpo = abs(gracz_x - skarb_x) + abs(gracz_y - skarb_y)
         if krokpo > minkrok:
-            print("Zimno")
+            print(f"Zimno; skarb: x{skarb_x}, y{skarb_y}; Ty: x{gracz_x}, y{gracz_y}")
         if krokpo < minkrok:
-            print("Ciepło")
+            print(f"Ciepło; skarb: x{skarb_x}, y{skarb_y}; Ty: x{gracz_x}, y{gracz_y}")
         if minkrok == 0:
             print("Wygrana")
             break
@@ -56,9 +57,9 @@ while True:
         gracz_y = gracz_y + 1
         krokpo = abs(gracz_x - skarb_x) + abs(gracz_y - skarb_y)
         if krokpo > minkrok:
-            print("Zimno")
+            print(f"Zimno; skarb: x{skarb_x}, y{skarb_y}; Ty: x{gracz_x}, y{gracz_y}")
         if krokpo < minkrok:
-            print("Ciepło")
+            print(f"Ciepło; skarb: x{skarb_x}, y{skarb_y}; Ty: x{gracz_x}, y{gracz_y}")
         if minkrok == 0:
             print("Wygrana")
             break
@@ -66,9 +67,9 @@ while True:
         gracz_y = gracz_y - 1
         krokpo = abs(gracz_x - skarb_x) + abs(gracz_y - skarb_y)
         if krokpo > minkrok:
-            print("Zimno")
+            print(f"Zimno; skarb: x{skarb_x}, y{skarb_y}; Ty: x{gracz_x}, y{gracz_y}")
         if krokpo < minkrok:
-            print("Ciepło")
+            print(f"Ciepło; skarb: x{skarb_x}, y{skarb_y}; Ty: x{gracz_x}, y{gracz_y}")
         if minkrok == 0:
             print("Wygrana")
             break
