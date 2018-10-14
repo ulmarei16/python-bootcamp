@@ -29,3 +29,5 @@ for licznik, zmiennatymczas in enumerate(li3, 2)
 range <-- zasięg
 for i in range(10) <-- zasięg od 0 do 9
          range(1, 50, 5) <-- zasięg od zero do 49 i co pięć
+
+https://www.w3schools.com/python/python_lists.asp

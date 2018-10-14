@@ -7,9 +7,9 @@ print(now.month)
 
 wiek = int(input("Podaj rok urodzenia: "))
 
-pelnoletni = now - wiek
+pelnoletni = now.year - wiek
 
-if pelnoletni < 18:
+if pelnoletni > 18:
     print("Jesteś pełnoletni/pełnoletnia!")
 else:
     print("Zjeżdzaj smarkaczu!")

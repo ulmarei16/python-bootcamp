@@ -8,15 +8,15 @@ dzielenie = a / b
 
 
 if operacja == "+":
-    print(f"Wynik: {dodawanie}")
+    print("Wynik: {dodawanie}")
 elif operacja == "-":
-    print(f"Wynik: {odejmowanie}")
+    print("Wynik: {odejmowanie}")
 elif operacja == "*":
-    print(f"Wynik: {mnozenie}")
+    print("Wynik: {mnozenie}")
 elif operacja == "/":
     if b == 0:
         raise ValueError ("Dla tej operacji druga liczba musi być inna niż zero")
-    print(f"Wynik: {dzielenie}")
+    print("Wynik: {dzielenie}")
 else:
-    # print("Nieznane działanie.")
+    #print("Nieznane działanie.")
     raise ValueError ("Nieprawidłowa wartość parametru.")
