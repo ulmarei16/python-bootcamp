@@ -33,3 +33,10 @@ a[2][1] #<--- wybiera element 1 z elementu 2
 # [:] okresla zakres  [:3] weź od zera do 3
 # [::x] x określa co ile elementów
 # [-x] służy do liczenia elementów od konca
+
+# 'There's a snake in my boot!'
+
+#This code breaks because Python thinks the apostrophe in 'There's' ends the string. We can use the backslash to fix the problem, like this:
+
+#'There\'s a snake in my boot!'
+
