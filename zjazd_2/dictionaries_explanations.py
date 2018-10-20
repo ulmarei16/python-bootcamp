@@ -30,3 +30,12 @@ for p in produkty:
 for k in produkty:
     print ()
 
+#pseudo dodawanie słowników
+a = {"a" : 1, "b" : 2}
+b = {"b" : 3, "d" : 4}
+
+print(a)
+print(b)
+
+a.update(b)
+print(a)
