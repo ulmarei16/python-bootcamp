@@ -19,3 +19,18 @@ else:
     print ("Ilość znaków w nawiasie: " + str(il_lit))
 
 #nie wiem jak uwarunkować, że jest tylko jeden nawias
+
+#sposob 2
+czy_miedzy_nawias = False
+licznik = 0
+
+for znak in napis:
+    if znak == "<":
+        czy_miedzy_nawias = True
+    elif znak == ">":
+        czy_miedzy_nawias = False
+    elif czy_miedzy_nawias:
+        licznik += 1
+
+print(licznik)
+#nie mam pojęcia jak sposob 2 dziala XD
