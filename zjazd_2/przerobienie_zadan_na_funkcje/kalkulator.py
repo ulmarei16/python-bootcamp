@@ -1,3 +1,5 @@
+#zadanie 10 w pierwszy zjazd
+
 def podaj_dane():
     a = int(input("Podaj pierwszą liczbę: "))
     b = int(input("Podaj drugą liczbę: "))

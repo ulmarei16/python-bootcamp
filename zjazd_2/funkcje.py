@@ -42,3 +42,17 @@ for osoba in lista_osob:
 
 for imie in lista_imion:
     przywitajsie(imie)
+
+def foo2(cena, *args): #<--- *args = dowolna ilośćargumentów, wpisujemy to na koncu
+    print("args", args)
+    print("cena", cena)
+
+x = ["tekst $cena","text $cena","tekst1"]
+foo2(*x, cena=10)
+
+#**kwargs <--- tworzą słownik
+
+for k in kwargs:
+    text = text.replace(f'${k}',str(kwargs[k]))
+
+"\n".join(out)  #<--------- łączy elementy listy z nowa linia
