@@ -42,3 +42,5 @@ print(a)
 
 from collections import OrderedDict, defaultdict
 
+my_dict2 = defaultdict(int) #<=== pozwala na uzywanie domyslnie wartosci liczbowe
+my_dict2 ["A"] += 1
