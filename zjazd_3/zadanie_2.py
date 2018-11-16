@@ -45,8 +45,10 @@ class Company:
 
     def pay_all_salary(self):
         sum_ = 0
+
         for e in self.payroll:
-            sum_ += e.pay_salary
+           sum_ += e.pay_salary()
+
         return sum_
 
 
@@ -83,14 +85,14 @@ def test_company():
     employee.register_time(5)
     google = Company("google")
     google.add_employee(employee)
-    assert google.size() ==1
+    assert google.total_staff() == 1
     assert google.pay_all_salary() == 500
     assert google.pay_all_salary() == 0
-    employee2 = Employee("Krzysztof", "Nowak", 100)
+    employee2 = Employee("Krzysztof", "Nowak", 200)
     employee2.register_time(5)
     employee.register_time(10)
     google.add_employee(employee2)
-    assert google.pay_all_salary() == 2000
+    assert google.pay_all_salary() == 2200
 
 # utworz klase company, ktora inicuje sie z nazwa
 # employee = Employee("Jan", "Nowak", 100)

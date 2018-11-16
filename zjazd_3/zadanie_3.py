@@ -22,3 +22,7 @@ def test_drive():
     assert car.drive(70) == 70
     assert car.drive(50) == 30
     assert car.drive(50) == 0
+    car.charge()
+    assert car.drive(50) == 50
+    car.charge()
+    assert car.drive(120) == 100

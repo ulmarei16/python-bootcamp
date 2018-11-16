@@ -11,7 +11,7 @@ class Vector:
         # return (new_x, new_y)
         return Vector(self.x+other.x, self.y + other.y)
 
-     def __mul__(self, other):
+    def __mul__(self, other):
     #     new_x = self.x * other
     #     new_y = self.y * other
     #     return (new_x, new_y)
@@ -27,11 +27,14 @@ class Vector:
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
 
+    def __lt__(self, other):
+        return self.length() < other.length()
+
     def length(self):
         return (self.x ** 2 + self.y ** 2) ** 0.5
 
 
-
+"""
 def test_dodawanie():
     vect1 = Vector(1,2)
     vect2 = Vector(1,2)
@@ -41,8 +44,11 @@ def test_dodawanie():
     assert result.y == 4
 
 def test_mnozenie():
-    vect1 = Vector(1, 2)
-    assert vect1 * 2 == (2,4)
+    vect1 = Vector(1,2)
+    result = vect1 * 2
+    
+    assert result.x == 2
+    assert result.y == 4
 
 def test_odejmowanie():
     vect1 = Vector(1, 3)
@@ -63,7 +69,7 @@ def test_rowne():
 def test_liczy_dlugosc():
     vect = Vector(2,2)
     assert vect.length() == (2 ** 2 + 2 ** 2) ** 0.5
-
+"""
 def test_mniejszy_niz():
     v1 = Vector(1,3)
     v2 = Vector(1,2)

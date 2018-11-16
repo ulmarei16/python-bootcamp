@@ -15,4 +15,4 @@ for litera in napis:
 
 print("Ile razy występuje każdy znak: ")
 for znak in liczniki_liter:
-    print(f"litera \"{znak}\" wystąpiła {liczniki_liter[znak]} razy")
+    print("litera " + str(znak) + " wystąpiła " + str(liczniki_liter[znak]) + " razy")

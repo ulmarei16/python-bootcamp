@@ -10,9 +10,9 @@ def liczenie_w_nawiasie(napis, start="<", stop=">"):
         else:
             wynik += level
 
-    return wynik
+    return print(wynik)
 
-
+liczenie_w_nawiasie("a <a<a<a>>>")
 
 
 

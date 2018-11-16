@@ -31,3 +31,10 @@ for i in range(10) <-- zasięg od 0 do 9
          range(1, 50, 5) <-- zasięg od zero do 49 i co pięć
 
 https://www.w3schools.com/python/python_lists.asp
+
+# a = [1,2,3]
+# b = [4,5]
+# a.extend(b) <---- dodaje do siebie listy
+# a.sort <--- ustawia pokolei i zmienia listę
+# a.sort(reverse=True) <-- ustawia od nawięklszego do najmniejszego i zmienia listę
+# sorted(a) <--- tworzy posortowaną kopię listy, nie zmienia listy
