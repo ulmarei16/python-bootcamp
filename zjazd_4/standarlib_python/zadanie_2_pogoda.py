@@ -1,9 +1,11 @@
+#https://docs.python.org/3/howto/urllib2.html
+#https://www.metaweather.com/api/
 import json
 import urllib.request
 import sys
 from collections import namedtuple
 
-Weather = namedtuple("Weather")
+Weather = namedtuple("Weather", ["location", "temperature", "humidity", "air_pressure"]) # ta tupla nadaje nazwy swoim indeksom, żeby było łatwiej się do nich odwołać
 
 if __name__= "__main__":
     #pobierz id dla lokalizacji
