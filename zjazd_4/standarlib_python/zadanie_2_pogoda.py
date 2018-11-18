@@ -7,7 +7,7 @@ from collections import namedtuple
 
 Weather = namedtuple("Weather", ["location", "temperature", "humidity", "air_pressure"]) # ta tupla nadaje nazwy swoim indeksom, żeby było łatwiej się do nich odwołać
 
-if __name__= "__main__":
+if __name__ == "__main__":
     #pobierz id dla lokalizacji
     #pobierz pogodę
     #pokaż id
